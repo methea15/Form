@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" >
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Fill in the required information.
+    Our purpose is to find most common interest.
+</p>
+<form id="survey-form">
+<fieldset id="fill">
+<label  id="name-label" for="name">
+    Enter your name: 
+    <input id="name" name="ur-name" type="text"  required placeholder="fullname" >
+
+</label>
+<label  id="email-label" for="email">
+    Enter your email: 
+    <input id="email" name="email" type="email"  required placeholder="name@.." >
+
+</label>
+<label id="number-label" for="number">Your age (must be between 8 and 30):
+        <input id="number" name="ur-age" type="number" min="8" max="30" required placeholder="Enter your age">
+    </label>
+</fieldset>
+<fieldset>
+<label>What is your current job status?</label>
+<select id="dropdown">
+    <option value="0">(select one)</option>
+    <option value="1">Student</option>
+    <option value="2">Full-time job</option>
+    <option value="3">Part-time job</option>
+    <option value="4">Unemployed</option>
+   </select> 
+</fieldset>
+<fieldset>
+<legend> What do you consider as interest</legend>
+<label>
+<input type="radio" id="choice" name="outing" value="movie"> movie </label>
+<label>
+<input type="radio" id="choice" name="outing" value="out">eating out</label>
+<input type="radio" id="choice" name="outing" value="shopping">shopping
+<input type="radio" id="choice" name="outing" value="walk">walking
+<input type="radio" id="choice" name="outing" value="sleep">sleeping
+</label>
+</fieldset>
+<fieldset>
+<label for="hobbies"> 
+    What do you usually spend your free time on?
+    <input type="checkbox" id="free" name="hobbies" value="gaming">Gaming
+    <input type="checkbox" id="free" name="hobbies" value="garderning">Garderning
+    <input type="checkbox" id="free" name="hobbies" value="reading">Reading
+    <input type="checkbox" id="free" name="hobbies" value="cooking">Cooking
+</label>
+</fieldset>
+<fieldset>
+Please voice your comment on what else might interest you:
+<textarea id="bio" placeholder="I enjoy the beach every now and then" maxlength="200"></textarea>
+</fieldset>
+<button id="submit">SUBMIT</button>
+</form>
+
+    </body>
+
+</html>
