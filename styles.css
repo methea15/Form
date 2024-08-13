@@ -2,16 +2,18 @@ h1{
     font-family:Times New Roman;
     font: 50px solid black;
     text-align:center;
-    
   }
   body{
-    background-color: #d25d49;
+    background-color: #ca8275;
     padding: 20px;
+  }
+  #desciption{
+    margin-left: 2rem;
   }
   fieldset{
     border:none;
     margin: 0 2px 4px 0;
-    padding: 10px;
+    padding: 8px;
   }
   textarea, input, select {
     margin: 7px 0;
@@ -23,14 +25,16 @@ h1{
   #submit{
     color: green;
     font: 50px;
-    border:solid green;
+    border:0.1rem solid green;
     height: 3em;
    margin: 10px auto;
    display:block;
+   border-radius: 2rem;
+   transition: all 400ms ease;
   }
   input[type="radio"], input[type="checkbox"]{
     display:flex;
-    margin-right:10px;
+    /* margin-right:5px; */
     background-color: grey;
   }
   form {
@@ -38,4 +42,13 @@ h1{
     margin: 0 auto;
     padding-bottom: 2em;
   }
+  
+  @media (max-width:600px) {
+    #choice{
+    margin-right: -2em;
+    padding-right: -7em;
+    display: flex;
+  }
+  }
+
   
